@@ -31,8 +31,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="basicCalculator.html">Basic Calculator</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="basicCalculator.html"
+              >Basic Calculator</a
+            >
             <a class="nav-link" href="mortgageCalculator.html"
               >Mortgage Calculator</a
             >
@@ -41,11 +43,23 @@
       </div>
     </nav>
 
+    <!-- Calculator -->
+
+    <div>Number 1: <input id="number1Field" type="text" /></div>
+    <div>Number 2: <input id="number2Field" type="text" /></div>
+    <div>
+      <button id="addButton">Add</button>
+      <button id="subtractButton">Subtract</button>
+      <button id="multiplyButton">Multiply</button>
+      <button id="divideButton">Divide</button>
+    </div>
+    <div>Answer: <input id="answerField" type="text" readonly /></div>
     <!-- include Bootstrap JS file from the CDN  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/basicCalc.js"></script>
   </body>
 </html>
