@@ -37,11 +37,59 @@
             <a class="nav-link" href="mortgageCalculator.html"
               >Mortgage Calculator</a
             >
-            <a class="nav-link" href="cdCalculator.html">Mortgage Calculator</a>
+            <a class="nav-link" href="cdCalculator.html">CD Calculator</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- Insert the Form -->
+    <div class="container">
+      <h3>CD Calculator</h3>
+      <!-- form from bootstrap -->
+      <!-- First Field -->
+      <div class="mb-3 w-25">
+        <label for="formGroupExampleInput" class="form-label"
+          >Deposit Amount</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="depositAmount"
+          placeholder="in Dollars"
+        />
+      </div>
+      <!-- Second Field -->
+      <div class="mb-3 w-25">
+        <label for="formGroupExampleInput2" class="form-label"
+          >Interest Rate</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="interestRate"
+          placeholder="in Percentage"
+        />
+      </div>
+      <!-- Third Field -->
+      <div class="mb-3 w-25">
+        <label for="formGroupExampleInput2" class="form-label"
+          >Maturity Years</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="maturityYears"
+          placeholder="in Years"
+        />
+      </div>
+      <button id="cdCalcBtn" type="button" class="btn btn-primary">
+        Calculate
+      </button>
+      <div id="answerField"></div>
+    </div>
+
+    <!-- Submit Buttons -->
 
     <!-- include Bootstrap JS file from the CDN  -->
     <script
@@ -49,5 +97,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/cdCalc.js"></script>
   </body>
 </html>

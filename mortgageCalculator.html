@@ -37,17 +37,31 @@
             <a class="nav-link" href="mortgageCalculator.html"
               >Mortgage Calculator</a
             >
-            <a class="nav-link" href="cdCalculator.html">Mortgage Calculator</a>
           </div>
         </div>
       </div>
     </nav>
 
+    <!-- adding boxes for user inputs -->
+    <div class="container">
+      <!-- input boxes for user -->
+      <div>Principal $<input id="principal" type="text" placeholder="$" /></div>
+      <div>Interest %<input id="interest" type="text" placeholder="%" /></div>
+      <div>
+        Loan Length in Years:
+        <input id="loanLength" type="text" placeholder="Ex: 15" />
+      </div>
+      <!-- calculate Button -->
+      <button id="mortgageCalcBtn">Calculate</button>
+      <!-- Display the Result -->
+      <div id="answerField"></div>
+    </div>
     <!-- include Bootstrap JS file from the CDN  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/mortgageCalculator.js"></script>
   </body>
 </html>
